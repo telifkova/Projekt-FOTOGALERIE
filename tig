@@ -1,0 +1,71 @@
+[33mcommit 3650c04dd3894fc3df76a478cf886c3574334acd[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: e73ec22 f3682af
+Author: telifkova <113845757+telifkova@users.noreply.github.com>
+Date:   Thu Nov 30 10:59:37 2023 +0100
+
+    Merge pull request #4 from dqd/main
+    
+    Fixed CSRF; added Django healthcheck
+
+[33mcommit f3682af6542315867313d10838a7e842cd2cfdfb[m
+Author: Pavel Mises <id@dqd.cz>
+Date:   Wed Nov 29 16:55:58 2023 +0100
+
+    Fixed CSRF; added Django healthcheck
+
+[33mcommit e73ec2276766afb96891a45655c7da0668136e6d[m
+Merge: e7dc92a 4d3711c
+Author: telifkova <113845757+telifkova@users.noreply.github.com>
+Date:   Tue Nov 28 08:11:18 2023 +0100
+
+    Merge pull request #3 from dqd/main
+    
+    App, templates, static files
+
+[33mcommit 4d3711c4fbee2be86f66c337668a878d2c4e3a95[m
+Author: Pavel Mises <id@dqd.cz>
+Date:   Thu Nov 23 06:44:16 2023 +0100
+
+    App, templates, static files
+
+[33mcommit e7dc92a0ff6493dc0a40d8c82057d50b547859d1[m
+Merge: adf9f95 1f0b788
+Author: telifkova <113845757+telifkova@users.noreply.github.com>
+Date:   Thu Nov 16 12:26:41 2023 +0100
+
+    Merge pull request #2 from dqd/main
+    
+    db healthcheck, templates DIR
+
+[33mcommit 1f0b788857c8f49332d584c49a30b1c1376a514d[m
+Author: Pavel Mises <id@dqd.cz>
+Date:   Wed Nov 15 06:38:57 2023 +0100
+
+    port 8002
+
+[33mcommit fc9eaa90d348c354137592f401770abf8515d7fa[m
+Author: Pavel Mises <id@dqd.cz>
+Date:   Wed Nov 15 04:56:55 2023 +0100
+
+    db healthcheck, templates DIR
+
+[33mcommit adf9f9596cee25306ed67d72daeebc9c56270505[m
+Merge: 1a40801 3f94c91
+Author: telifkova <113845757+telifkova@users.noreply.github.com>
+Date:   Tue Nov 14 08:09:06 2023 +0100
+
+    Merge pull request #1 from dqd/main
+    
+    .gitignore added
+
+[33mcommit 3f94c912460fb0666ac4360504d13d460fef8466[m
+Author: Pavel Mises <id@dqd.cz>
+Date:   Fri Nov 10 16:31:23 2023 +0100
+
+    .gitignore added
+
+[33mcommit 1a40801478382c5a9822e4a29095d420fcb7967b[m
+Author: Tereza Lifková <tereza.lifkova@educanet.cz>
+Date:   Thu Nov 9 11:37:54 2023 +0100
+
+    prejmenovani
