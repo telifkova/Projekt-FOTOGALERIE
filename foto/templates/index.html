@@ -2,6 +2,14 @@
 
 {% block content %}
     <h1>{% block title %}GALERIE{% endblock %}</h1>
-    <p>Toto je titulní strana vašeho projektu.</p>
-    <p>Zde napíšete vlastní text dle potřeby.</p>
+    {% if user.is_authenticated %}
+        <ul>
+            {% for album in albums %}
+                <li><a href="{% url 'detail' album.id %}">{{ album }}</a></li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>Vítej ve tvé galerii</p>
+        <p>Zde se budou zobrazovat tvá alba</p>
+    {% endif %}
 {% endblock %}
