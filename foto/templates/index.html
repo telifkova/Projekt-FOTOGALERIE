@@ -1,13 +1,25 @@
 {% extends "base.html" %}
+{% load thumbnail %}
+{% load static %}
 
 {% block content %}
     <h1>{% block title %}GALERIE{% endblock %}</h1>
     {% if user.is_authenticated %}
-        <ul>
-            {% for album in albums %}
-                <li><a href="{% url 'detail' album.id %}">{{ album }}</a></li>
-            {% endfor %}
-        </ul>
+        
+        {% for album in albums %}
+            <a href="{% url 'detail' album.id %}" class="thumbnail">
+                {% if album.get_random_photo %}
+                {% thumbnail album.get_random_photo.image "100x100" crop="center" as photo %}
+                <img src="{{ photo.url }}" width="{{ photo.width }}" height="{{ photo.height }}">
+                {% endthumbnail %}
+                {% else %}
+                <img src="{% static 'zlodej.png' %}">
+                {% endif %}
+                <br>{{ album.name }}
+
+            </a>
+        {% endfor %}
+        
     {% else %}
         <p>Vítej ve tvé galerii</p>
         <p>Zde se budou zobrazovat tvá alba</p>

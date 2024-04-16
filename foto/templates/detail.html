@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load thumbnail %}
+
+{% block content %}
+    <h1>{% block title %}Album {{ album.name }}{% endblock %}</h1>
+    <p>{{ album.description|default:"" }}</p>
+    <form action=".">
+        <input type="text" name="search" value="{{request.GET.search}}">
+        <input type="submit" value="vyhledat">
+    </form>
+    <p><a href="{% url "add_foto" album.id %}">Přidání fotky</a></p>
+    {% for photo in photos %}
+    <a href = "{{ photo.image.url }}" class="thumbnail" >
+    {% thumbnail photo.image "100x100" crop="center" as photo %}
+    <img src="{{ photo.url }}" width="{{ photo.width }}" height="{{ photo.height }}">
+    {% endthumbnail %}
+    <br>{{ photo.name }}</a>
+
+    {% endfor %}
+    
+    
+
+{% endblock %}
